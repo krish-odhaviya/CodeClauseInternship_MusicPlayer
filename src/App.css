@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.App {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 6px 0px;
+}
+
+
+.player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* background: linear-gradient(to right, #7bf0bd 0%, #98fb98 100%); */
+  /* background-color: #98fb98; */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(236, 236, 236, 0)
+  );
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 7px 3px;
+  transition: all ease 0.8s;
+  height: 0%;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 93%;
+  height: 15px;
+  border-radius: 5px;
+  background: #04aa6d;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.player-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.pl-btn {
+  margin: 8px 5px;
+  color: #04aa6d;
+}
+
+
+#bottone1 {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 10px;
+  border-radius: 9px;
+  margin : 0 8px;
+  background: #d5f365;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+ }
+ 
+ #bottone1:hover {
+  box-shadow: 7px 5px 56px -14px #C3D900;
+ }
+ 
+ #bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #C3D900;
+ }

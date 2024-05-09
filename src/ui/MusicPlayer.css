@@ -1,0 +1,90 @@
+.card {
+  padding: 10px 7px;
+  display: flex;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* border:1px solid #98fb98; */
+  /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
+  /* box-shadow: 0 2px 10px 0 #98fb98; */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #98fb98;
+  width: 20rem;
+  height: 25rem;
+  margin: 7px 15px;
+  transition: all ease 0.5s;
+  text-align: center;
+  font-weight: 700;
+}
+
+.card:hover {
+  box-shadow: 0 2px 5px 0 #98fb98;
+  transform: scale(1.01);
+}
+
+.addList:hover {
+  cursor: pointer;
+}
+
+/* .card:click{
+  color: red;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+} */
+
+img {
+  border-radius: 0.8rem;
+  width: auto;
+  height: 70%;
+}
+
+.desc {
+  text-align: center;
+  /* color: white; */
+  opacity: 0.8;
+  font-weight: normal;
+  /* font-size: 0.3em; */
+}
+
+.list-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ffff;
+  border-radius: 2em;
+  margin: 0 3px;
+  padding: 3px;
+}
+
+.list-btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-start;
+    font-size: small;
+  }
+  img {
+    width: 30%;
+    height: auto;
+    margin: 8px;
+  }
+}
